@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+    .addition {
+        display: none;
+    }
+    .form {
+        width: 100%;
+        position: relative;
+        background: url('../images/side_background.png') 50%/cover no-repeat;
+        box-shadow: none;
+        color: rgb(245, 245, 0);
+        &__logo {
+            display: inline-block;
+            position: absolute;
+            top: 23px;
+            left: 45px;
+            user-select: none;
+        }
+        .element1 {
+            display: none;
+        }
+        .element2 {
+            display: none;
+        }
+        &__items_mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: #bebebe;
+            border-radius: 50px;
+            .linkedln_mobile::before {
+                content: url('../images/Linkedin.svg');
+            }
+            .twitter_mobile::before {
+                content: url('../images/twitter.svg');
+            }
+            .facebook_mobile::before {
+                content: url('../images/Facebook.svg');
+            }
+        }
+        &__subtitle {
+            font-size: 23px;
+            line-height: 26px;
+            color: rgb(245, 245, 0);
+        }
+        &__form-box {
+            max-width: 170px;
+            label:not(:last-of-type) {
+                display: none;
+            }
+            input::placeholder {
+                color: #4F4F4F;
+            }
+        }
+        &__submit {
+            width: 100px;
+            background: rgba(255, 255, 1, 0.89);
+            border: 1px solid #CCCCCC;
+            box-shadow: 2px 4px 6px rgba(79, 79, 79, 0.15);   
+            color: rgba(74, 51, 138, 0.9);    
+        }
+        &__submit:hover {
+            background: rgb(209, 209, 0);
+            border: 1px solid #bebebe;
+            box-shadow: 2px 4px 6px rgba(209, 209, 0, 0.55);
+        }
+    }
+}

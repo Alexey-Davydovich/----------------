@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/registration.css">
+    <title>Sign in &#183; Test</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="addition">
+            <a class="logo" href="#"><img src="/images/logo.svg" alt="logo"></a>
+            <div class="addition__items">
+                <a class="linkedln" href="#">Sign up with Linkedln</a>
+                <a class="twitter" href="#">Sign up with Twitter</a>
+                <a class="facebook" href="#">Sign up with Facebook</a>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__logo">
+                <a class="forn__logo_mobile" href="#"><img src="/images/logo.svg" alt="logo"></a>
+            </div>
+            
+            <img class="element1" src="./images/element-group.svg">
+            <img class="element2" src="./images/element-group.svg">
+
+            <div class="form__items_mobile">
+                <a class="linkedln_mobile" href="#"></a>
+                <a class="twitter_mobile" href="#"></a>
+                <a class="facebook_mobile" href="#"></a>
+            </div>
+
+            <h1 class="form__title">Sign Up</h1>
+            <p class="form__subtitle">Get started absolutely free</p>
+            <form class="form__form-box" action="#" novalidate>
+                <label for="name">First name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+    
+                <label for="surname">Second name</label>
+                <input type="text" name="surname" id="surname" placeholder="Surname">
+    
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required>
+    
+                <label for="tel">Telephone</label>
+                </span><input type="tel" name="tel" id="tel" placeholder="Phone" maxlength="18">
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+    
+                <label for="Repeat-password">Repeat password</label>
+                <input type="password" name="Repeat-password" id="Repeat-password" placeholder="Repeat password" required>
+    
+                <label><input type="checkbox" name="checkbox" id="checkbox">Remember me</label>
+                
+                <button class="form__submit" id="submit" type="submit">Sign up</button>
+            </form>
+        </section>
+    </div>
+    <script src="./scripts/registration.js"></script>
+</body>
+</html>
